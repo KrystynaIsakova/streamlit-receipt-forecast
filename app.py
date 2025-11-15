@@ -50,6 +50,7 @@ with col1:
     plt.setp(ax.get_xticklabels(), rotation=45)
     fig.tight_layout()
 
+
     st.pyplot(fig) 
 
 
