@@ -1,13 +1,9 @@
 import streamlit as st
+st.title("Dummy App")
 
-st.title("🔮 Dummy Receipt Forecaster")
+month = st.selectbox("Choose a month",
+             ["January", "February", "March", "April", "May", "June", 
+              "July", "August", "September", "October", "November", "December"])
 
-month = st.selectbox("Choose a month:", [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-])
 
-forecast = len(month) * 1000
-
-st.write(f"You selected: {month}")
-st.write(f"Forecast: {forecast} receipts")
+st.write(f"You have selected {month}")
